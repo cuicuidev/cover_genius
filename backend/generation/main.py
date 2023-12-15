@@ -45,7 +45,7 @@ def generate(user_data: models.UserData, target: models.Target, options: models.
     openai = OpenAI(api_key=API_KEY)
 
     completion = openai.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4",
         messages=[
             {"role": "system", "content": system_message}, 
             {"role": "system", "content": user_message},
